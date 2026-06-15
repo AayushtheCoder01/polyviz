@@ -28,15 +28,16 @@ Modern React + TypeScript educational polynomial visualizer and learning tool.
 
 ```
 polyviz/
-├── python/                    # Original Python version (moved here for preservation)
 ├── src/
 │   ├── components/
 │   │   ├── PolynomialInput.tsx
-│   │   ├── PolynomialGraph.tsx
+│   │   ├── QuickExamples.tsx
+│   │   ├── CoefficientEditor.tsx
+│   │   ├── InteractiveGraph.tsx
 │   │   ├── AnalysisPanel.tsx
-│   │   └── StepSolver.tsx
+│   │   └── StepByStep.tsx
 │   ├── utils/
-│   │   └── polynomial.ts     # All math logic (most important file)
+│   │   └── polynomial.ts     # Core math logic (RRT, synthetic division, completing the square, etc.)
 │   ├── App.tsx
 │   └── ...
 ├── index.html
@@ -59,10 +60,6 @@ npm run build
 
 Open http://localhost:5173
 
-## Preserved Original
-
-The earlier Python/CLI + matplotlib version lives in the `python/` folder (with its own README). It uses numpy/sympy/matplotlib and is great for notebooks or terminal use.
-
 ## Design
 
 Clean, spacious, serious educational UI. Excellent mobile support. Step-by-step section is collapsible and readable. All components are intentionally small and focused.
@@ -73,6 +70,6 @@ Clean, spacious, serious educational UI. Excellent mobile support. Step-by-step 
 - Root finding prefers exact rational roots via RRT + repeated synthetic division.
 - For quadratics we demonstrate completing the square step-by-step using only deterministic string construction that mirrors manual algebra.
 - Higher degree cases receive a clear explanation that no general radical solution exists (Abel–Ruffini theorem).
-- **All of the above is 100% plain classical code** — ordinary hand-written JavaScript algorithms running entirely in your browser. No large language models, no AI, and no external services are involved at any point.
+- **All of the above is 100% plain classical code** — ordinary hand-written JavaScript algorithms running entirely in your browser. No large language models, no AI, and no external services are involved at any point. (The original Python prototype used SymPy and has been removed.)
 
 Happy learning!

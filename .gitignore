@@ -28,34 +28,7 @@ dist-ssr
 .env.*
 *.env
 
-# Python (preserved original version in python/ folder)
-python/.venv/
-python/.env/
-python/**/__pycache__/
-python/**/*.py[cod]
-python/**/*$py.class
-python/**/*.so
-python/**/.Python
-python/**/build/
-python/**/develop-eggs/
-python/**/downloads/
-python/**/eggs/
-python/**/.eggs/
-python/**/lib/
-python/**/lib64/
-python/**/parts/
-python/**/sdist/
-python/**/var/
-python/**/wheels/
-python/**/*.egg-info/
-python/**/*.egg
-python/**/*.manifest
-python/**/*.spec
-python/**/PKG-INFO
-python/**/*.pyc
-python/**/*.pyo
-python/**/__pycache__/**
-python/src/polynomial_explorer.egg-info/
+# Python (old version removed)
 
 # Build artifacts
 *.tsbuildinfo
