@@ -60,6 +60,20 @@ npm run build
 
 Open http://localhost:5173
 
+## Deploy on Vercel
+
+1. Push your code to GitHub (already done).
+2. Go to [vercel.com](https://vercel.com) and sign in with GitHub.
+3. Click **"Add New Project"** → **Import Git Repository**.
+4. Select the `polyviz` repository.
+5. Vercel will auto-detect it as a **Vite** project.
+6. Leave the default settings:
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
+7. Click **Deploy**.
+
+Your app will be live at a `*.vercel.app` URL in seconds. You can later connect a custom domain.
+
 ## Design
 
 Clean, spacious, serious educational UI. Excellent mobile support. Step-by-step section is collapsible and readable. All components are intentionally small and focused.
